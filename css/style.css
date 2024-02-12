@@ -68,3 +68,35 @@ body{
         font-size: .5rem;
     }
 }
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-button {
+  display: inline-block;
+  width: 50px; /* Lebar dan tinggi sesuaikan dengan ukuran hati */
+  height: 50px;
+  background-color: pink; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  font-size: 24px; /* Ukuran teks */
+  text-align: center; /* Pusatkan teks secara horizontal */
+  line-height: 50px; /* Pusatkan teks secara vertikal */
+  border-radius: 50%; /* Bentuk hati */
+  text-decoration: none; /* Hilangkan garis bawah */
+  animation: heartbeat 1s infinite; /* Animasi detak jantung */
+}
+
+.heart-button:hover {
+  background-color: #ff6b9b; /* Warna latar belakang saat dihover */
+  animation: none; /* Hentikan animasi detak jantung saat dihover */
+}
+
